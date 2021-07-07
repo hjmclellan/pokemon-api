@@ -5,7 +5,7 @@ const FetchPokemon = (props) => {
     const [pokemon, setPokemon] = useState([]);
 
     const getPokemon = () => {
-        fetch('https://pokeapi.co/api/v2/pokemon?limit=807')
+        fetch('https://pokeapi.co/api/v2/pokemon?limit=898')
             .then(response => response.json())
             .then(response => {
                 setPokemon(response.results)
